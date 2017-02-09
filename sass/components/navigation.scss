@@ -1,0 +1,135 @@
+
+.navigation {
+	height:  100%; 
+	width:  $navigation-width; 
+
+	display:  flex;
+	flex-direction:  column; 
+	align-items:  center; 
+	justify-content:  space-between; 
+
+	background-color:  rgb(250,250,250); 
+	border-right:  solid 1px rgb(239, 239, 239); 
+	position:  fixed; 
+	left:  0; 
+	top:  0; 
+
+	z-index:  100; 
+}
+.navigation__logo {
+	width:  56px; 
+	height:  auto; 
+	padding:  36px;   
+	margin-left:  auto; 
+	margin-right:  auto; 
+}
+	.navigation__logo img {
+		width:  100%; 
+		height:  auto; 
+	}
+.navigation__trigger { 
+	width:  36px; 
+	padding-bottom:  92px; 
+	cursor:  pointer; 
+	padding-top:  48px; 
+	* {
+		pointer-events:  none; 
+	}
+}
+	.trigger__button {
+		width:  36px; 
+		height:  8px; 
+		position:  relative; 
+		margin-bottom:  6px; 
+		div {
+			width:  100%; 
+			height:  1px; 
+			background-color:  #000000; 
+			position:  absolute; 
+		}
+		.tb__layer-1 {
+			top:  0; 
+		} 
+		.tb__layer-2 {
+			bottom:  0; 
+		} 
+
+	}
+	.trigger__text {
+		width:  100%; 
+		text-align:  center; 
+		font-size:  11px; 	
+		color:  #000000; 
+		font-weight:  400; 
+	}
+	.trigger__text {
+		display:  inline-block; 
+	}
+
+
+.menu { 
+	padding-left:  $navigation-width; 
+	position:  fixed; 
+	top:  0; 
+	left:  0; 
+	width:  100%; 
+	height:  100%; 
+	box-sizing:  border-box; 
+	pointer-events:  none; 
+	z-index:  50; 
+	display:  flex; 
+}
+.menu__clip {
+	max-width:  0; 
+	width:  100%; 
+	height:  100%; 
+	overflow:  hidden; 
+	background-color:  $primary; 
+}
+.menu__container {
+	height:  100vh; 
+	width:  100vw; 
+	padding-left:  48px;  
+	padding-top:  48px; 
+	padding-bottom:  48px; 
+	padding-right:  48px; 
+	box-sizing:  border-box; 
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+}
+.menu__row {
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+}
+.menu__column {
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+	margin-right:  48px; 
+}
+.menu__link {
+	font-size:  56px; 
+	color:  #ffffff; 
+	transition:  color .2s ease; 
+	margin-bottom:  36px; 
+	font-family:  "Playfair Display"; 
+	position:  relative; 
+}
+.menu__link:hover .strike {
+	width:  calc(100% + 36px); 
+}
+.strike {
+	position:  absolute; 
+	top:  60%;
+	left:  -18px;  
+	height:  1px;
+	background:  #ffffff; 
+	width:  0;  
+	transition:  width .3s ease; 
+}
+

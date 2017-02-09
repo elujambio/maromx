@@ -1,0 +1,55 @@
+@import "base/foundation";
+
+
+
+$navigation-width:  128px; 
+$primary: #2d2b6d; 
+
+html, 
+body {
+	width:  100%; 
+	overflow-x:  hidden; 
+}
+* {
+	font-family:  "Open Sans"; 
+}
+h1, h2, h3 {
+	font-family:  "Playfair Display"; 
+	font-weight:  400;  
+	color:  $primary; 
+}
+a {
+	color:  $primary; 
+}
+.interface {
+	width:  100%; 
+	padding-left:  $navigation-width; 
+	box-sizing:  border-box; 
+	position:  relative; 
+}
+.section__title {
+	margin-top:  calc(50vh - 66px); 
+	width:  100%; 
+	font-size:  36px; 
+	font-family:  "Open Sans", sans-serif; 
+	font-weight:  300; 
+	color:  $primary; 
+	letter-spacing:  36px; 
+	text-transform:  uppercase; 
+	text-align:  center; 
+	margin-left:  auto; 
+	margin-right:  auto; 
+	background-color:  #ffffff; 
+	padding:  48px 24px; 
+	z-index:  15; 
+	position:  relative; 
+	display:  block; 
+	
+}
+@import "components/navigation";
+@import "components/product-highlight";
+@import "components/landing";
+@import "components/product-grid";
+@import "components/footer";
+
+

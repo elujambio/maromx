@@ -4,6 +4,7 @@
 
 $navigation-width:  128px; 
 $primary: #2d2b6d; 
+$primary-400: #57558a; 
 
 html, 
 body {
@@ -44,7 +45,24 @@ a {
 	z-index:  15; 
 	position:  relative; 
 	display:  block; 
-	
+}
+@media screen and (max-width:  1160px) {
+	.section__title {
+		margin-top:  72px; 
+		margin-bottom:  72px; 
+	}
+}
+@media screen and (max-width:  786px) {
+	.interface {
+		padding-left:  0; 
+		padding-top:  $navigation-width; 
+	}
+}
+@media screen and (max-width:  650px) {
+	.section__title {
+		letter-spacing:  18px; 
+		font-size:  24px; 
+	}
 }
 @import "components/navigation";
 @import "components/product-highlight";

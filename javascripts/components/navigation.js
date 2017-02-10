@@ -76,16 +76,7 @@ function listeners() {
 			}
 		}
 	});
-
-	// $(".menu__link").on("mouseover click touchstart", function(){
-	// 	TweenMax.to($(this).find(".strike"), .3, {
-	// 		width:  "calc(100% + 36px)"
-	// 	});
-	// }); 
-	
 }
-
-
 
 function initialize_navigation(){
 

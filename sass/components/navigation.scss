@@ -133,3 +133,42 @@
 	transition:  width .3s ease; 
 }
 
+@media screen and (max-width:  786px) {
+	.navigation {
+		height:  $navigation-width; 
+		width:  100%;
+		flex-direction:  row; 
+		border-right:  none; 
+		border-bottom:  solid 1px rgb(239,239,239); 	 
+	}
+	.navigation__logo {
+		width:  56px; 
+		height:  auto; 
+		padding:  36px;   
+		margin-right:  0px; 
+		margin-left:  0px; 
+	}
+		.navigation__logo img {
+			width:  100%; 
+			height:  auto; 
+		}
+	.navigation__trigger { 
+		width:  36px; 
+		padding-right:  36px; 
+		cursor:  pointer; 
+		padding-top:  48px; 
+		margin-top:  auto; 
+		margin-bottom:  auto; 
+		* {
+			pointer-events:  none; 
+		}
+	}
+	.menu {
+		left:  0; 
+		padding-left:  0; 
+		top:  $navigation-width; 
+	}
+	.menu__row {
+		flex-direction:  column; 
+	}
+}

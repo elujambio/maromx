@@ -18,6 +18,23 @@
 }
 .intro .product-highlight {
 	width:  100%; 
-	position:  relative; 
-	
+	position:  relative; 	
+}
+@media screen and (max-width:  1160px) {
+
+	.intro {
+	 	.product-highlight:nth-of-type(odd) {
+			.ph__info-container {
+				order:  -2; 
+			}
+		}
+	}
+
+
+}
+@media screen and (max-width:  786px) {
+	.line {
+		left:  50%;
+		z-index: -1; 
+	}
 }

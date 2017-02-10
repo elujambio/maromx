@@ -12,7 +12,7 @@ footer {
 	margin-left:  auto; 
 	margin-right:  auto; 
 	padding:  60px 48px; 
-	z-index:  20; 
+	z-index:  40; 
 }
 footer .column {
 	display:  flex; 
@@ -61,5 +61,19 @@ footer a {
 	}
 	img {
 		height:  48px; 
+	}
+}
+@media screen and (max-width: 1160px) {
+	footer {
+		width:  100%; 
+		max-width:  none; 
+	}
+}
+@media screen and (max-width:  650px) {
+	footer {
+		flex-direction:  column; 
+	}
+	footer .column {
+		width:  100%; 
 	}
 }
